@@ -1,0 +1,7 @@
+nmea_navsat_driver:
+  ros__parameters:
+    port: "/dev/deluo_gps"
+    baud: 4800
+    frame_id: "gps_frame"
+    time_ref_source: "gps_frame"
+    useRMC: False

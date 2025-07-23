@@ -1,0 +1,11 @@
+<launch>
+
+<node pkg="falcon_tdlas" exec="falcon_tdlas" name="falcon_tdlas" output="screen" >
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="topic" value="/falcon/reading"/>
+    <param name="verbose" value="true"/>
+    <param name="frequency" value="10.0"/>
+</node>
+
+<node pkg="rqt_plot" exec="rqt_plot" name="falcon_plot" args="/falcon/reading/average_ppmxm /falcon/reading/average_reflection_strength /falcon/reading/average_absorption_strength" />
+</launch>

@@ -1,0 +1,6 @@
+[submodule "serial_ros2"]
+	path = serial_ros2
+	url = git@github.com:RoverRobotics-forks/serial-ros2.git
+[submodule "olfaction_msgs"]
+	path = olfaction_msgs
+	url = https://github.com/MAPIRlab/olfaction_msgs

@@ -1,0 +1,3 @@
+[submodule "TRACKING/Methane/hw_drivers/src/lightwarelidar_ROS2"]
+	path = TRACKING/Methane/hw_drivers/src/lightwarelidar_ROS2
+	url = https://github.com/LightWare-Optoelectronics/lightwarelidar2.git

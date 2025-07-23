@@ -1,0 +1,1 @@
+PROGRAM="/usr/bin/miniraeLiteID /dev/%k", RESULT=="0", SYMLINK+="minirae_lite", MODE="0666"

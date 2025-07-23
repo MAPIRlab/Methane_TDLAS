@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+ <name>minirae_lite</name>
+  <version>0.0.0</version>
+  <description>Interface to the PhotoIonization Detector MiniRAE_lite. Gas concentration in [ppm] from serial port</description>
+
+  <maintainer email="jgmonroy@uma.es">Javier G. Monroy</maintainer>
+  <license>GPLv3</license>
+
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rclcpp</build_depend>
+  <build_depend>olfaction_msgs</build_depend>
+  <build_depend>serial</build_depend>
+
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+  
+</package>

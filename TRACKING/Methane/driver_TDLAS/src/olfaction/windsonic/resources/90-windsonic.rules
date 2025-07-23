@@ -1,0 +1,1 @@
+PROGRAM="/usr/bin/windSonicID /dev/%k", RESULT=="0", SYMLINK+="windsonic", MODE="0666"

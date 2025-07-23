@@ -1,0 +1,36 @@
+mov_PTU: 
+  ros__parameters:
+    pid:
+      Kp_x_4111: 0.00074
+      Ki_x_4111: 0.000077
+      Kd_x_4111: 0.00015
+      Kp_y_4111: 0.0005
+      Ki_y_4111: 0.000077
+      Kd_y_4111: 0.00001
+      Kp_x_8911: 0.00015 
+      Ki_x_8911: 0.00051
+      Kd_x_8911: 0.00001
+      Kp_y_8911: 0.00015
+      Ki_y_8911: 0.00051
+      Kd_y_8911: 0.00001
+      #Aqui debajo se pueden añadir otros valores del PID para otros valores de zoom
+    limits:
+      v_max: 0.6
+      v_min: 0.024
+    calib:
+      m_x: -0.1188
+      n_x: -10.8428
+      m_y: -0.1895
+      n_y: -2.599
+    zoom:
+      a5: -1.80805045e-20
+      a4: 2.87709116e-15
+      a3: -6.85205947e-11
+      a2: 7.61102012e-07
+      a1: -2.06249021e-03
+      a0: 15.3983410
+    sensor:
+      pixel_size: 2.74e-3
+    pid_adapt:
+      ajuste_Kp: 0.0001
+      ajuste_Ki: 0.000001

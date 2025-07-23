@@ -1,0 +1,12 @@
+[submodule "olfaction_drivers"]
+	path = olfaction_drivers
+	url = git@github.com:MAPIRlab/hw_drivers_olfaction.git
+[submodule "ouster-ros"]
+	path = ouster-ros
+	url = git@github.com:MAPIRlab/ouster-ros.git
+[submodule "hunter_ros2"]
+	path = hunter_ros2
+	url = git@github.com:MAPIRlab/hunter_ros2.git
+[submodule "hunter_ugv_sdk"]
+	path = hunter_ugv_sdk
+	url = git@github.com:MAPIRlab/hunter_ugv_sdk.git
