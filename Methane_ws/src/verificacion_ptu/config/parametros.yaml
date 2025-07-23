@@ -1,0 +1,4 @@
+comandos_velocidad:
+  ros__parameters:
+    v: 0.7
+    R: -10.0

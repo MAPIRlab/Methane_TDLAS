@@ -1,0 +1,9 @@
+*/build/
+*/install/
+*.so
+*.o
+*.pyc
+*.db
+.vscode/
+*.log
+*.bag

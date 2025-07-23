@@ -1,0 +1,4 @@
+hunter_motion:
+  ros__parameters:
+    latitude_ptu: 36.715823333333333
+    longitude_ptu: -4.478645
