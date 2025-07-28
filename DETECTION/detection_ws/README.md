@@ -1,7 +1,8 @@
 # marker_detector
 [![Python](https://img.shields.io/badge/python-43.2%25-blue)](#)
 
-Paquete **ROS 2 (ament_python)** que expone un *nodo* para abrir una cámara (vía **Vimba Python SDK – `vmbpy`**), controlar una **óptica/lente por HID** (bibliotecas `.so` incluidas) y **detectar un marcador luminoso** mediante umbralado de intensidad y morfología.  
+Paquete **ROS 2 (ament_python)** que expone un *nodo* para abrir una cámara (vía **Vimba Python SDK – `vmbpy`**), controlar una **óptica/lente por HID** (bibliotecas `.so` incluidas) y **detectar un marcador luminoso** mediante umbralado de intensidad y morfología.
+Para más información acerca del algoritmo mirar las líneas comentadas del código.
 El nodo publica la **posición del marcador** en el *topic* `/Info_Posicion` como un `std_msgs/String` con **JSON**, para su posterior utilización con .
 
 > **Idioma del código**: mayoritariamente en español.  
