@@ -103,6 +103,37 @@ El nodo `mov_PTU` posee un archivo de parámetros para configurar:
 
 ### DETECTION
 
+Módulo de **percepción visual** encargado de detectar en imagen el punto/marker procedente del sensor TDLAS y publicar su **posición en píxeles** para el resto del sistema.
+
+> 🔎 **Documentación completa:** este módulo incluye su propio README con todos los detalles de instalación, dependencias, parámetros y flujo interno.  
+> Consúltalo en `DETECTION/README.md` (imprescindible para instalar el SDK de cámara y librerías asociadas).
+
+**Resumen de lo que hay:**
+- *Workspace* ROS 2 con el paquete `marker_detector`.
+- Nodo ejecutable `marker_detector` (nodo `autofocus_node`), que:
+  - Abre una cámara **Allied Vision** vía **Vimba X SDK (`vmbpy`)**.
+  - Controla la **óptica/zoom** mediante HID.
+  - Detecta el marcador luminoso y calcula su **centro** en la imagen.
+  - Publica la posición en el *topic* **`/Info_Posicion`** como `std_msgs/String` con JSON:  
+    `{"height": H, "width": W, "pos_x": X, "pos_y": Y}`.
+  - Muestra ventanas de visualización y permite control por teclado (flechas para zoom, `ESC` para salir).
+
+**Puesta en marcha mínima** (consulta el README del módulo para requisitos previos y SDK):
+```bash
+# Dentro del workspace de DETECTION
+colcon build 
+source install/setup.bash
+ros2 run marker_detector marker_detector
+```
+
+**Notas importantes:**
+- La instalación del **Vimba X SDK** y librerías de cámara es obligatoria.  
+  Sigue las instrucciones del README del módulo. Descarga oficial:  
+  [Vimba X SDK de Allied Vision](https://www.alliedvision.com/en/products/software/vimba-x-sdk/#c13326).
+- No se repiten aquí parámetros/constantes ni pasos de instalación específicos; todo está detallado en `DETECTION/README.md`. 
+
+---
+
 ## Guía de Uso
 
 1. **Instalación de dependencias:**  
