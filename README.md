@@ -18,6 +18,7 @@ Este repositorio provee las herramientas necesarias para la detección de fuente
   - [HUNTER](#hunter)
   - [TRACKING](#tracking)
   - [DETECTION](#detection)
+  - [CONTROL AND MANAGEMENT APPLICATION](#control-and-management-application)
 - [Guía de Uso](#guía-de-uso)
 - [Requisitos](#requisitos)
 - [Contacto y Soporte](#contacto-y-soporte)
@@ -104,6 +105,7 @@ El nodo `mov_PTU` posee un archivo de parámetros para configurar:
 ### DETECTION
 
 Módulo de **percepción visual** encargado de detectar en imagen el punto/marker procedente del sensor TDLAS y publicar su **posición en píxeles** para el resto del sistema.
+Está organizado en un único workspace, desde el cúal se puede acceder a todo el algoritmo de detección.
 
 > **Documentación completa:** este módulo incluye su propio README con todos los detalles de instalación, dependencias, parámetros y flujo interno.  
 > Consúltalo en `DETECTION/README.md` (imprescindible para instalar el SDK de cámara y librerías asociadas).
@@ -133,6 +135,8 @@ ros2 run marker_detector marker_detector
 - No se repiten aquí parámetros/constantes ni pasos de instalación específicos; todo está detallado en `DETECTION/README.md`. 
 
 ---
+
+### CONTROL AND MANAGEMENT APPLICATION   
 
 ## Guía de Uso
 
@@ -178,5 +182,5 @@ ros2 run marker_detector marker_detector
 
 ---
 
-> Proyecto desarrollado por [MAPIRlab](https://www.mapir.uma.es/) - Universidad de Málaga  
+> Proyecto desarrollado por [MAPIRlab](https://mapir.isa.uma.es/mapirwebsite/) - Universidad de Málaga  
 > Utilities for detecting methane sources using TDLAS technology.
