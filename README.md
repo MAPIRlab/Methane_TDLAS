@@ -105,7 +105,7 @@ El nodo `mov_PTU` posee un archivo de parámetros para configurar:
 
 Módulo de **percepción visual** encargado de detectar en imagen el punto/marker procedente del sensor TDLAS y publicar su **posición en píxeles** para el resto del sistema.
 
-> 🔎 **Documentación completa:** este módulo incluye su propio README con todos los detalles de instalación, dependencias, parámetros y flujo interno.  
+> **Documentación completa:** este módulo incluye su propio README con todos los detalles de instalación, dependencias, parámetros y flujo interno.  
 > Consúltalo en `DETECTION/README.md` (imprescindible para instalar el SDK de cámara y librerías asociadas).
 
 **Resumen de lo que hay:**
