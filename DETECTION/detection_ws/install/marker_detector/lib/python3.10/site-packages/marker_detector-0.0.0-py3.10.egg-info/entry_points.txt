@@ -1,0 +1,3 @@
+[console_scripts]
+marker_detector = marker_detector.camera_node:main
+
