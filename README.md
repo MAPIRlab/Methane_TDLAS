@@ -17,6 +17,7 @@ Este repositorio provee las herramientas necesarias para la detección de fuente
 - [Estructura del Repositorio](#estructura-del-repositorio)
   - [HUNTER](#hunter)
   - [TRACKING](#tracking)
+  - [DETECTION](#detection)
 - [Guía de Uso](#guía-de-uso)
 - [Requisitos](#requisitos)
 - [Contacto y Soporte](#contacto-y-soporte)
@@ -35,7 +36,7 @@ https://github.com/user-attachments/assets/16bcccb4-5e00-4620-a35c-ed0c9270b562
 
 El repositorio está organizado en dos módulos principales, **HUNTER** y **TRACKING**, cada uno con sus correspondientes espacios de trabajo y funcionalidades específicas:
 
-### HUNTER
+### HUNTER 
 
 Está organizado en 3 espacios de trabajo diferentes: Methane_ws, arm_interbotix_ws y hunter_ws. En el ordenador de HUNTER hay un README que explica en profuncidad la utilidad de cada uno de estos tres espacios de trabajo.
 
@@ -99,6 +100,8 @@ El nodo `mov_PTU` posee un archivo de parámetros para configurar:
   > **Nota:** Esos parámetros están obtenidos de manera empírica, por lo que para obtener mejores resultados, es necesario obtener de nuevo estos parámetros con la mayor precisión posible. El método utilizado hasta ahora consiste en el reconocimiento de la posición que ocupa el punto verde (proveniente del sensor TDLAS) dentro de la imagen, de manera que ese es el píxel de la imagen con respecoto a la cual se debe de calcular el error.
 
 ---
+
+### DETECTION
 
 ## Guía de Uso
 
