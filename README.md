@@ -138,6 +138,48 @@ ros2 run marker_detector marker_detector
 
 ### CONTROL AND MANAGEMENT APPLICATION   
 
+Módulo que proporciona una **interfaz de operación** unificada para iniciar/detener el proceso, supervisar estados (PTU, Hunter, TDLAS), visualizar posiciones en mapa y coordinar el **bridge ROS↔MQTT** y la reproducción/guardado de sesiones.
+
+> **Documentación completa:** este módulo incluye su propio README con todos los detalles de instalación, dependencias, parámetros y flujo interno.  
+> Consúltalo en `CONTROL AND MANAGEMENT APPLICATION/README.md`.
+---
+
+## Composición del módulo
+- **Paquete ROS 2 (Python):** `methane_scan`.
+  - **Nodo principal:** `methane_scan_node` (GUI + lógica ROS).
+  - **Bridge Python:** `mqtt_ros_bridge_node` (ROS↔MQTT).
+  - **Estructura interna (alto nivel):**
+    - `controllers/` (PTU, Robot, TDLAS, core).
+    - `views/` (páginas, componentes y **web**: mapa embebido con Google Maps).
+    - `resources/` (iconos/SVG, estilos `*.qss`).
+    - `launch/` (`launch.py`, `parameters.yaml`, `mqtt_parameters.yaml`).
+- **Paquete ROS 2 (C++):** `mqtt_bridge` (*ament_cmake*).
+  - Nodo `mqtt_bridge_node` con su `launch/` y `mqtt_basic_robot.yaml` (broker y subtemas).
+- **Datos de pruebas:** `experiments/` (rosbag2 `*.db3` + `metadata.yaml`).
+
+> Los **tópicos** y **parámetros** se definen en los YAML de `launch/`; revisa el README completo para el listado y las recomendaciones de despliegue.
+
+---
+
+## Flujo básico de operación
+1. **Arranque de la UI** (`methane_scan_node`).  
+2. **Inicialización del mapa** y componentes de estado (PTU/Hunter/TDLAS).  
+3. **Autolanzado de bridges** ROS↔MQTT con los parámetros cargados.  
+4. **Interacción del operador**: iniciar/detener proceso, reproducción/guardado de sesiones, supervisión de estados y posiciones.  
+
+---
+
+## Arranque rápido
+```bash
+# Desde el workspace de la UI
+colcon build
+source install/setup.bash
+ros2 launch methane_scan launch.py
+```
+> Si necesitas ejecutar nodos por separado o configurar el broker MQTT, consulta el README completo del módulo.
+
+---
+
 ## Guía de Uso
 
 1. **Instalación de dependencias:**  
