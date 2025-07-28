@@ -5,6 +5,10 @@
 [![C++](https://img.shields.io/badge/c++-40.9%25-blue)](#)
 [![MATLAB](https://img.shields.io/badge/matlab-8.6%25-yellow)](#)
 
+<a href = "https://github.com/MAPIRlab/Methane_TDLAS/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=MAPIRlab/Methane_TDLAS"/>
+</a>
+
 ---
 
 Este repositorio provee las herramientas necesarias para la detección de fuentes de metano utilizando tecnología TDLAS (Tunable Diode Laser Absorption Spectroscopy). El sistema está orientado a aplicaciones en espacios exteriores, empleando robótica móvil, sensórica avanzada y algoritmos de percepción y control.
