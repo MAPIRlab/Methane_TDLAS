@@ -1,0 +1,271 @@
+QMainWindow {
+    background-color: #1C1C1C;
+}
+            
+/* ----------------- Tool Bar (OSCURO) ----------------- */
+QToolBar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2C2C2C, stop:1 #1E1E1E);
+    border-bottom: 1px solid #444444;
+    padding: 8px;
+}
+
+QToolBar QToolButton {
+    background-color: transparent;
+    color: #ECECEC;
+    font-size: 11pt;
+    margin: 0 6px;
+    padding: 4px 8px;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #3A3A3A;
+    border-radius: 4px;
+}
+            
+/* ----------------- Tab Widget (OSCURO) ----------------- */
+QTabWidget::pane {
+    background-color: #1C1C1C;
+    border: 1px solid #444444;
+}
+
+QTabBar::tab {
+    background-color: #272727;
+    color: #ECECEC;
+    padding: 10px 20px;
+    margin: 0 2px;
+    border: 1px solid #444444;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 11pt;
+}
+
+QTabBar::tab:selected {
+    background-color: #005F5F;
+    color: #FFFFFF;
+}
+
+QTabBar::tab:hover {
+    background-color: #3A3A3A;
+}
+            
+/* ----------------- Cards y widgets (OSCURO) ----------------- */
+QFrame#deviceCard {
+    background-color: #2A2A2A;
+    border-radius: 10px; 
+    border: 1px solid #444444;
+}
+
+QFrame#deviceCard QLabel {
+    font-size: 12pt;
+    margin: 2px 0;
+    color: #DDDDDD;
+}
+
+QFrame#mapFrame {
+    background-color: #262626;
+    border: 1px solid #444444;
+}
+
+QFrame#controlZone {
+    background-color: #2A2A2A;
+    border: 1px solid #444444;
+    border-radius: 8px;
+}
+QPushButton {
+    background-color: #343434;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: #DDDDDD;
+}
+
+QPushButton:hover {
+    background-color: #3E3E3E;
+}
+
+/* Estilo para botones deshabilitados, para que se vean más marcados */
+QPushButton:disabled {
+    background-color: #222222;
+    border: 1px solid #444444;
+    color: #888888;
+}
+
+QTableWidget {
+    background-color: #2A2A2A;
+    border: 1px solid #444444;
+    color: #DDDDDD;
+    gridline-color: #444444;
+}
+
+QTableView {
+    background-color: #2A2A2A;
+}
+
+QTableView::item {
+    background-color: #2A2A2A;
+}
+
+QTableWidget::item:selected {
+                background-color: #8c9196;
+                color: white;
+            }
+
+QHeaderView::section {
+    background-color: #333333;
+    color: #DDDDDD;
+    border: none;
+}
+
+QTableCornerButton::section {
+    background-color: #333333;
+}
+
+QTableScrollBar {
+    background-color: #2A2A2A;
+}
+
+QLabel {
+    color: #DDDDDD;
+}
+
+QGroupBox {
+    border: 1px solid #444444;
+    border-radius: 8px;
+    color: #DDDDDD;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    margin-top: -8px;
+    padding: 0 5px;
+}
+
+QLineEdit {
+    background-color: #333333;
+    color: #FFFFFF;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+/* Estilo para QLineEdit en estado readOnly, para ofrecer mayor feedback */
+QLineEdit:read-only {
+    background-color: #444444;
+    color: #BBBBBB;
+    border: 1px dashed #777777;
+}
+
+
+QDialog {
+    background-color: #1C1C1C;
+    color: #DDDDDD;
+    border: 1px solid #444444;
+    padding: 8px;
+}
+
+/* Zona de Control con el mismo estilo card que tus DeviceCards */
+QFrame#controlZone {
+    background-color: #2A2A2A;
+    border-radius: 10px; 
+    border: 1px solid #444444;
+}
+
+/* Ajuste de labels dentro del control zone */
+QFrame#controlZone QLabel {
+    color: #DDDDDD;
+}
+
+/* Si quieres un estilo distinto para la parte interna de datos */
+QFrame#controlDataFrame {
+    background-color: transparent; /* o #2A2A2A si prefieres un color sólido */
+    border: none;
+}
+
+/* Ajustar el separador horizontal en oscuro */
+QFrame[frameShape="4"] {
+    /* QFrame::HLine */
+    background-color: #444444;
+    height: 1px;
+    margin: 4px 0;
+}
+
+/* Botones Iniciar/Abortar (ya definidos en tu código, pero por si acaso) */
+QPushButton#btnIniciar {
+    background-color: #28a745;
+    color: #ffffff;
+    border: 1px solid #1c7a33;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+
+QPushButton#btnIniciar:hover {
+    background-color: #218838;
+}
+
+QPushButton#btnIniciar:disabled {
+    background-color: #185726;
+    color: #888888;
+    border: 1px solid #0a2911;
+}
+
+QPushButton#btnAbortar {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: 1px solid #b52a36;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+
+QPushButton#btnAbortar:hover {
+    background-color: #c82333;
+}
+
+QPushButton#btnAbortar:disabled {
+    background-color: #8b232d;
+    color: #888888;
+    border: 1px solid #501218;
+}
+
+QPushButton#btnPausar {
+    background-color: #005F9F;
+    color: #FFFFFF;
+    border: 1px solid #004D80;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+
+QPushButton#btnPausar:hover {
+    background-color: #004D80;
+}
+
+QPushButton#btnPausar:disabled {
+    background-color: #003355;
+    color: #888888;
+    border: 1px solid #002244;
+}
+
+/* Fondo de la zona de scroll */
+    QScrollArea, QScrollArea\#_qt_scrollarea_viewport {
+        background-color: transparent;
+        border: none;
+    }
+    /* Scrollbar track y thumb */
+    QScrollBar:vertical {
+        background: #2b2b2b;
+        width: 8px;
+        margin: 0px;
+    }
+    QScrollBar::handle:vertical {
+        background: #555555;
+        min-height: 20px;
+        border-radius: 4px;
+    }
+    QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+        height: 0;
+        subcontrol-origin: margin;
+    }

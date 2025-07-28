@@ -1,0 +1,9 @@
+mqtt_ros_bridge_node:
+  ros_parameters:
+    TOPICS:
+      hunter_position: /hunter_position
+      ptu_position: /fix
+      mqtt2ros: /mqtt2ros
+      ros2mqtt: /ros2mqtt
+      initialize_hunter: /initialize_hunter_params
+      start_stop_hunter: /start_stop_hunter

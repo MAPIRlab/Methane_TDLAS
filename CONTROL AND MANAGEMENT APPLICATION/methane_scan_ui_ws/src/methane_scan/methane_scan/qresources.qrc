@@ -1,0 +1,15 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file alias="icon_PTU.svg">resources/boxes.svg</file>
+        <file alias="icon_TDLAS.svg">resources/cloud-haze2.svg</file>
+        <file alias="icon_Robot.svg">resources/ev-front.svg</file>
+        <file alias="icon_Perception.svg">resources/crosshair.svg</file>
+        <file alias="icon_Detection.svg">resources/eye.svg</file>
+        <file alias="icon_State.svg">resources/gear-fill.svg</file>
+        <file alias="icon_Trayectoria.svg">resources/pin-map-fill.svg</file>
+        <file alias="icon_DeteleTraj.svg">resources/trash-fill.svg</file>
+        <file alias="icon_RenameTraj.svg">resources/pencil-square.svg</file>
+        <file alias="Logo">resources/methane_scan.svg</file>
+    </qresource>
+</RCC>
