@@ -2,6 +2,7 @@
 
 Paquete **ROS 2 (ament_python)** que implementa una **aplicación de escritorio (PyQt + Qt WebEngine)** para **dirigir y supervisar** el proceso de detección con TDLAS: integra la interfaz gráfica, la comunicación con ROS 2, un *bridge* ROS↔MQTT y utilidades de simulación y registro de datos.
 
+> **Manual de Usuario**: Para agilizar el proceso de aprendizaje del uso de la aplicación, tiene el manual de usuario [aquí](https://github.com/MAPIRlab/Methane_TDLAS/blob/832e80d50620caeb21dcfbb29eca3a1404141a9f/CONTROL%20AND%20MANAGEMENT%20APPLICATION/methane_scan_ui_ws/Manual%20de%20Usuario.pdf)
 ---
 
 ## Contenido y estructura relevante
